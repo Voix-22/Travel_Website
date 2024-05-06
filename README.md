@@ -29,8 +29,8 @@ when you click on the options provided in the header.
 * Solo
 * Couples
 * Adventure
-# Individual web pages will contain the details of the packages available. 
-# When you click on a desired package, you will get directed to a form 
+* Individual web pages will contain the details of the packages available. 
+* When you click on a desired package, you will get directed to a form 
 asking you to fill in your details.
-# When you click on the latest offers on the homepage, it directly takes you 
+* When you click on the latest offers on the homepage, it directly takes you 
 to the forms
