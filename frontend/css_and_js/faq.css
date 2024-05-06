@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: "Quicksand",sans-serif;
+    background: #1c1c1c;
+    color: #fff;
+}
+section{
+    min-height:25vh;
+    width: 80%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title {
+    font-size: 3rem;
+   
+}
+
+body{
+    padding-left:10px;
+    padding-right: 10px;
+}
+.header{
+display:flex;
+align-items: center;
+align-content: center;
+justify-content: space-between;
+
+font-size: 25px;
+font-weight: 550;
+height: 80px;
+}
+.mlink{
+    display:flex;
+    justify-content: space-between;
+    width:60%;
+}
+.faq{
+    max-width:700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: underline;
+}
+.question h3{
+    font-size: 1.8rem;
+
+}
+.answer p{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+}
+
+.faq .active .answer{
+    max-height: 300px;
+}
