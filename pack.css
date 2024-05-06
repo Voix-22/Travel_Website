@@ -1,0 +1,115 @@
+.heading{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    font-family:'Times New Roman', Times, serif ;
+}
+.packages .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+.packages .box-container .box{
+    flex:1 1 30rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgb(150, 148, 148);
+}
+.packages .box-container .box img{
+    height:25rem;
+    width:100%;
+    object-fit: cover;
+}
+.packages .box-container .box .content{
+    padding: 2rem;
+
+}
+.packages .box-container .box .content h3{
+    font-size: 2rem;
+    color: #333;
+}
+.packages .box-container .box .content h3 i{ 
+    color: orange;
+}
+.book{
+    background-color: orange;
+    color: aliceblue;
+    border: 6rem;
+    border:none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.packages .box-container .box .content p{
+
+font-size:1.7rem ;
+color:#666;
+padding:1rem 0;
+}
+.packages .box-container .box .content .stars i{
+    font-size: 1.7rem;
+    color: yellow;
+
+}
+.packages .box-container .box .content .price{
+    font-size:2rem;
+    color:#333;
+    padding-top: 1rem;
+}
+.packages .box-container .box .content .price span{
+    color: #666;
+    font-size:1.5rem;
+    text-decoration: line-through;
+}
+.packages .box-container .box .content .h{
+
+    font-size:1.9rem ;
+    color:#666;
+    padding:0.56rem 0;
+}
+.packages .box-container .box .content .hi{
+
+    font-size:1.5rem ;
+    color:#413434;
+    padding:1rem 0;
+    }
+    #nav{
+        height:60px;
+        
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        font-size: 25px;
+        margin: bottom 30px;
+    }
+    .b{
+        display:flex;
+        justify-content: space-between;
+        position: relative;
+        width:75%;
+        font-size: 1.7rem;
+    }
+    .box:hover{
+        transform: translateY(5px);
+    }
+    body{
+        padding-left:10px;
+        padding-right: 10px;
+    }
+    .header{
+display:flex;
+align-items: center;
+align-content: center;
+justify-content: space-between;
+
+font-size: 25px;
+font-weight: 550;
+height: 80px;
+
+}
+.mlink{
+display:flex;
+justify-content: space-between;
+width:60%;
+}
+.link:hover{
+    color:#53963f;
+}

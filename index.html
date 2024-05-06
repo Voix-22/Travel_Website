@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Reviews</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html{
+            zoom:55%;
+        }
+            .heading{
+        font-size: 4rem;
+        padding-bottom: 1rem;
+        font-family:'Times New Roman', Times, serif ;
+}
+body{
+            padding-left:10px;
+            padding-right: 10px;
+        }
+        .header{
+    display:flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    
+    font-size: 25px;
+    font-weight: 550;
+    height: 80px;
+    background-color: bisque;
+}
+.mlink{
+    display:flex;
+    justify-content: space-between;
+    
+    width:60%;
+}
+/* Styles for the main container */
+.container {
+    display:contents;
+    align-items:normal;
+}
+
+/* Styles for the left content */
+.content {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    width: 100%; /* Spans the entire width of the webpage */
+    height: 700px; /* Set the height to your desired value */
+    overflow: hidden;
+
+}
+
+.content img {
+    width: 100%; /* Make the image fill the entire width of the container */
+    height: auto;
+}
+
+.left-column{
+    position: absolute; /* Position the left column */
+    left: 0; /* Align to the left edge of the container */
+    top: 0; /* Align to the top edge of the container */
+    bottom: 0; /* Align to the bottom edge of the container */
+    display: flex; /* Use flexbox to align items vertically */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    color: white; /* Text color */
+    padding: 20px; /* Add some padding */
+}
+
+.text {
+    text-align: center; /* Align text center */
+}
+
+.line1 {
+    font-size: 100px; /* Font size for the first line */
+    font-weight: bold; /* Bold font weight */
+    margin-bottom: 5px; /* Add some spacing between lines */
+    padding-left: 300px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.line2 {
+    font-size: 40px; /* Font size for the second line */
+    margin-bottom: 5px;
+    font-weight: bold;
+    padding-left:300px; /* Add some spacing between lines */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.line3 {
+    font-size: 40px;
+    padding-left: 300px; /* Font size for the third line */
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.right-column {
+    flex: 1; /* Each column takes up equal space */
+    position: relative; /* Set position to relative for absolute positioning */
+}
+
+.percentage-box {
+    position: absolute; /* Position the box absolutely */
+    top: 20px; /* Adjust top position as needed */
+    right: 20px; /* Adjust right position as needed */
+    width: 900px; /* Set width of the box */
+    height: 600px; /* Set height of the box */
+    background-color: #bda488; /* White background */
+    border: 1px solid #bda488; /* Add border for visual appeal */
+    padding: 100px; /* Add padding */
+    margin-right: 150px;
+    margin-top:30px
+}
+
+.percentage-meter {
+    height: 20px; /* Set height of each meter */
+    margin-bottom: 30px; /* Add spacing between meters */
+    position: relative; /* Set position to relative for absolute positioning */
+}
+
+.filled-part {
+    position: absolute; /* Position the filled part absolutely */
+    top: 0; /* Align to the top of the meter */
+    left: 0; /* Align to the left of the meter */
+    height: 100%; /* Fill the entire height of the meter */
+    background-color:rgb(105, 77, 42); /* Aqua color for filled portion */
+}
+
+.empty-part {
+    position: absolute; /* Position the empty part absolutely */
+    top: 0; /* Align to the top of the meter */
+    left: 0; /* Align to the left of the meter */
+    height: 100%; /* Fill the entire height of the meter */
+    background-color: rgb(231, 207, 159); /* Gray color for empty portion */
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.review {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.review img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.review h3 {
+    margin-bottom: 10px;
+}
+
+.review .rating {
+    color: #f39c12;
+}
+
+.review p {
+    margin-bottom: 0;
+}
+
+.btn {
+    cursor: pointer;
+}
+.star{
+    text-align: left;
+    color:black;
+    size: 5px;
+}
+.link:hover{
+    color:#f39c12;
+}
+
+</style>
+</head>
+<body>
+    <section class="packages" id="packages">
+        <div class="header">
+            <div class="link" onclick="main()">Adventour</div>
+            <div class="mlink">
+                <div class="link" onclick="fam()">Family</div>
+                <div class="link" onclick="friends()">Friends</div>
+                <div class="link" onclick="solo()">Solo</div>
+                <div class="link" onclick="couples()">Couples</div>
+                <div class="link" onclick="adventure()">Adventure</div>
+                <div class="link" onclick="review()">Reviews</div>
+                <div class="link" onclick="faq()">FAQs</div>
+                <div class="link" onclick="contacts()">Contacts</div>
+            </div>
+        </div>
+       <main>
+        <section class="rating-summary">
+            <div class="container">
+                <div class="content">
+                    <div class="left-column">
+                        <div class="text">
+
+                            <p class="line1">Happy Travelers</p>
+                            <p class="line2">99.21% Positive Reviews</p>
+                            <p class="line3">Based on 1454 reviews</p>
+   
+                        </div>
+                    </div>
+                    <div class="right-column">
+                        <div class="percentage-box">
+                            <h2><center>Review Ratings:</h2>
+                            <h4 class="star">★★★★★</h4>
+                            <div class="percentage-meter">
+                                <div class="filled-part" style="width: 96%;"></div>
+                                <div class="empty-part"></div>
+                                
+                            </div>
+                            <h4 class="star">★★★★</h4>
+                            <div class="percentage-meter">
+                                <div class="filled-part" style="width: 89%;"></div>
+                                <div class="empty-part"></div>
+                            </div>
+                            <h4 class="star">★★★</h4>
+                            <div class="percentage-meter">
+                                <div class="filled-part" style="width: 40%;"></div>
+                                <div class="empty-part"></div>
+                            </div>
+                            <h4 class="star">★★</h4>
+                            <div class="percentage-meter">
+                                <div class="filled-part" style="width: 20%;"></div>
+                                <div class="empty-part"></div>
+                            </div>
+                            <h4 class="star">★</h4>
+                            <div class="percentage-meter">
+                                <div class="filled-part" style="width: 10%;"></div>
+                                <div class="empty-part"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="https://wallpapercave.com/wp/wp4069427.jpg">
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="container">
+        <h1 class="text-center my-5">Reviews from our previous clients:</h1>
+        <div id="reviews" class="row">
+            <!-- Reviews will be dynamically added here -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle (Popper.js included) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-CwVv5WBH/pDqmD1D0/j9rluHOxIOzGGthbU+YLZ8HCwaNdN6D1W31gmhXrygIpFJ" crossorigin="anonymous"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    <script src="pack.js"></script>
+
+</body>
+</html>
